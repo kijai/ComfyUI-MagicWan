@@ -1,6 +1,7 @@
 from .nodes.wan_flowedit_nodes import WanFlowEditGuiderNode, WanFlowEditGuiderAdvNode, WanFlowEditGuiderCFGNode, WanFlowEditGuiderCFGAdvNode, WanFlowEditSamplerNode
 from .nodes.modify_wan_model_node import ConfigureModifiedWanNode
 from .nodes.wan_model_pred_nodes import WanInverseModelSamplingPredNode, WanReverseModelSamplingPredNode
+from .nodes.wan_feta_enhance_node import WanFetaEnhanceNode
 
 NODE_CLASS_MAPPINGS = {
     "WanFlowEditGuider": WanFlowEditGuiderNode,
@@ -11,6 +12,7 @@ NODE_CLASS_MAPPINGS = {
     "ConfigureModifiedWan": ConfigureModifiedWanNode,
     "WanInverseModelSamplingPred": WanInverseModelSamplingPredNode,
     "WanReverseModelSamplingPred": WanReverseModelSamplingPredNode,
+    "WanFetaEnhance": WanFetaEnhanceNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -22,4 +24,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConfigureModifiedWan": "Configure Modified Wan Model",
     "WanInverseModelSamplingPred": "Wan Inverse Model Pred",
     "WanReverseModelSamplingPred": "Wan Reverse Model Pred",
+    "WanFetaEnhance": "Wan Feta Enhance",
 }
